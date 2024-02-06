@@ -18,6 +18,8 @@
 - Run:
   ```bash
   uvicorn main:app -reload
+- :sparkles: ***Code with joy and let the algorithms dance!*** :sparkles:
+
 
 ### Additional
 - Install formatter for VSCode (to format clean code, sorting import packages on module):
@@ -37,6 +39,9 @@
     }
 }
 ```
+- Change remote origin if create new project: 
+  ```bash
+  git remote set-url origin git@github.com:devjobseekercompany/blahblah.git
 
 ## ROLES
 
