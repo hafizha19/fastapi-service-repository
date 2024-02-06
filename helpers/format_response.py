@@ -8,7 +8,7 @@ def format_response_success(
         data = format_response_data(response_dto, model_obj)
 
     response_body = {
-        "meta": {"code": 200, "status": "success", "message": message},
+        "meta": {"status": "success", "message": message},
         "data": data,
     }
     return response_body
