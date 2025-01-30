@@ -14,7 +14,7 @@ class BaseModel(Document):
         # Set created_at only if it's not already set
         if not self.created_at:
             self.created_at = datetime.now()
-            
+
         # Always update updated_at
         self.updated_at = datetime.now()
 

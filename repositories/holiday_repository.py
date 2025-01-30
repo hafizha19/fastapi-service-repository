@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import List
 
 from bson import ObjectId
+from devtools import debug
 from fastapi import HTTPException
 from mongoengine import DoesNotExist
 
@@ -45,3 +46,21 @@ def update(data: dict, id: str) -> Holiday:
 
     holiday.save()
     return holiday
+
+
+def check_is_holiday(
+    date,
+) -> bool:
+    if isinstance(date, str):
+        date = datetime.strptime(date, "%d-%m-%Y")
+    else:
+        date = datetime.combine(date, datetime.min.time())
+    query = {
+        "date": date,
+    }
+    holiday = Holiday.objects(__raw__=query)
+
+    if len(holiday) == 0:
+        return False
+
+    return True
