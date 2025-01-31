@@ -15,6 +15,10 @@
   ```bash
   .venv/Scripts/activate.ps1
   ```
+  for macOS:
+  ```bash
+  source .venv/bin/activate
+  ```
 - Install requirement packages:
   ```bash
   pip install -r requirements.txt
