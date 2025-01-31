@@ -21,7 +21,7 @@ async def initiate_database():
 
 # Configure logging
 logging.basicConfig(
-    filename=f'logs\log_{datetime.now().strftime("%Y-%m-%d")}.log',
+    filename=f'logs/log_{datetime.now().strftime("%Y-%m-%d")}.log',
     level=logging.INFO,  # Set the logging level according to your needs
     format="%(levelname)s - %(message)s - Line %(lineno)d - %(asctime)s",
 )
