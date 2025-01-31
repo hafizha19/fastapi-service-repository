@@ -25,7 +25,7 @@
   ```
 - Run:
   ```bash
-  uvicorn main:app -reload
+  uvicorn main:app --reload
   ```
 - :sparkles: **_Code with joy and let the algorithms dance!_** :sparkles:
 
